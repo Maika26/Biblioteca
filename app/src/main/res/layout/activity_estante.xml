@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EstanteActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/estante"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/etxtLetra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etxtLetra"
+        android:layout_width="223dp"
+        android:layout_height="57dp"
+        android:ems="10"
+        android:hint="@string/estante_letra"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/etxtNumero"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/etxtNumero"
+        android:layout_width="224dp"
+        android:layout_height="58dp"
+        android:ems="10"
+        android:hint="@string/estante_numero"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/etxtColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etxtLetra" />
+
+    <EditText
+        android:id="@+id/etxtColor"
+        android:layout_width="221dp"
+        android:layout_height="59dp"
+        android:ems="10"
+        android:hint="@string/estante_color"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btn_estante_crear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etxtNumero" />
+
+    <Button
+        android:id="@+id/btn_estante_crear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_crear"
+        app:layout_constraintBottom_toTopOf="@+id/btn_omitir_registro_estante"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etxtColor" />
+
+    <Button
+        android:id="@+id/btn_omitir_registro_estante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/saltar_formulario"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_estante_crear" />
+</androidx.constraintlayout.widget.ConstraintLayout>

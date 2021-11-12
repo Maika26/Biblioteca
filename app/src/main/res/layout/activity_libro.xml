@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LibroActivity">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hint_titulo"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_titulo_libro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_titulo_libro"
+        android:layout_width="220dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@string/hint_nombre"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/descripcion_libro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo" />
+
+    <EditText
+        android:id="@+id/fecha_publicacion"
+        android:layout_width="220dp"
+        android:layout_height="59dp"
+        android:ems="10"
+        android:hint="@string/fecha_publicacion"
+        android:inputType="date"
+        app:layout_constraintBottom_toTopOf="@+id/copias_libro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descripcion_libro" />
+
+    <EditText
+        android:id="@+id/copias_libro"
+        android:layout_width="224dp"
+        android:layout_height="62dp"
+        android:ems="10"
+        android:hint="@string/copias"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/cantidad_paginas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fecha_publicacion" />
+
+    <EditText
+        android:id="@+id/cantidad_paginas"
+        android:layout_width="221dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:hint="@string/cantidad_paginas"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/sp_autores"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/copias_libro" />
+
+    <Button
+        android:id="@+id/btn_crear_libro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_crear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sp_estantes" />
+
+    <EditText
+        android:id="@+id/descripcion_libro"
+        android:layout_width="222dp"
+        android:layout_height="58dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/descripcion"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/fecha_publicacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_titulo_libro" />
+
+    <Spinner
+        android:id="@+id/sp_autores"
+        android:layout_width="405dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toTopOf="@+id/sp_editoriales"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cantidad_paginas" />
+
+    <Spinner
+        android:id="@+id/sp_editoriales"
+        android:layout_width="406dp"
+        android:layout_height="46dp"
+        app:layout_constraintBottom_toTopOf="@+id/sp_estantes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sp_autores" />
+
+    <Spinner
+        android:id="@+id/sp_estantes"
+        android:layout_width="405dp"
+        android:layout_height="52dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_crear_libro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sp_editoriales" />
+</androidx.constraintlayout.widget.ConstraintLayout>

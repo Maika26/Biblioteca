@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Biblioteca</string>
+
+    <string name="hint_titulo">INGRESA UN LIBRO</string>
+    <string name="titulo_libro"> titulo del libro</string>
+    <string name="descripcion"> descripcion del libro</string>
+    <string name="fecha_publicacion"> fecha de publicacion</string>
+    <string name="copias"> numero de copias</string>
+    <string name="titulo">Bienvenido a la Biblioteca Virtual</string>
+    <string name="btn_crear">Crear</string>
+    <string name="btn_listar">Listar</string>
+    <string name="btn_modificar">Modificar</string>
+    <string name="btn_eliminar">Eliminar</string>
+    <string name="txtTitulo">INGRESA A UN AUTOR</string>
+    <string name="hint_nombre">Nombre</string>
+    <string name="hint_apellido">Apellido</string>
+    <string name="hint_nacionalidad">Nacionalidad</string>
+    <string name="titulo_editorial">INGRESA UNA EDITORIAL</string>
+    <string name="cantidad_paginas">cantidad de paginas</string>
+    <string name="estante">INGRESA UN ESTANTE</string>
+    <string name="estante_letra">Letra</string>
+    <string name="estante_numero">Numero</string>
+    <string name="estante_color">Color</string>
+    <string name="saltar_formulario">Omitir Registro</string>
+</resources>
